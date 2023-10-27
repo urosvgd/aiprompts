@@ -15,9 +15,7 @@ const PromptSchema = new Schema({
   }
 });
 
-PromptSchema.set('toJSON', {
-  virtuals: true
-})
+
 
 const Prompt = models.Prompt || model('Prompt', PromptSchema);
 

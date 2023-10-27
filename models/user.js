@@ -15,9 +15,7 @@ const UserSchema = new Schema({
     type: String,
   }
 });
-UserSchema.set('toJSON', {
-  virtuals: true
-})
+
 
 const User = models.User || model("User", UserSchema);
 
